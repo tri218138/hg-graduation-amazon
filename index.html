@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graduation Invitation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 90%;
+      max-width: 500px;
+      margin: auto;
+      background-color: #f7f7f7;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .title {
+      font-size: 3em;
+      font-family: 'Cursive', sans-serif;
+      color: #333;
+    }
+    .subtitle {
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .date-time {
+      font-size: 2em;
+      color: #b89f5d;
+    }
+    .location {
+      font-size: 1em;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .image {
+      width: 100%;
+      border-radius: 8px;
+      /* margin-bottom: 20px; */
+    }
+    .contact {
+      font-size: 0.9em;
+      color: #333;
+    }
+    .phone {
+      font-weight: bold;
+      color: #333;
+    }
+    .icon-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        gap: 15px;
+    }
+    .icon img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .phone-icon img {
+        animation: shake 0.5s infinite alternate;
+    }
+    .address-icon img {
+        animation: slow-shake 0.5s infinite alternate;
+    }
+    @keyframes shake {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+    }
+    @keyframes slow-shake {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-5px); }
+    }
+    .combined-images {
+      display: flex; /* Display side-by-side */
+      flex-direction: column; /* Change to "row" for side-by-side */
+      /* gap: 10px; */
+      align-items: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .combined-images img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .video-container {
+      display: flex; /* Display side-by-side */
+      flex-direction: column; /* Change to "row" for side-by-side */
+      /* gap: 10px; */
+      align-items: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="invitation.jpg" alt="Graduation Photo" class="image">
+    <div class="icon-container">
+      <a href="https://maps.app.goo.gl/kcDQoRwQ7FjdKANm6" target="_blank" class="icon address-icon">
+          <img src="location.png" alt="Bản đồ">
+      </a>
+      <a href="tel:0399665895" class="icon phone-icon">
+          <img src="phone-receiver-silhouette.png" alt="Gọi điện">
+      </a>
+    </div>
+    <!-- Combined Image Block -->
+    <div class="combined-images">
+      <img src="parking-guidance-map-title.png" alt="Map Title">
+      <img src="tdtu-map-4.gif" alt="Graduation Photo">
+    </div>
+    <div class="video-container combined-images">
+      <img src="parking-guidance-video-title.png" alt="Map Title">
+      <iframe width="500" height="315" 
+        src="https://www.youtube.com/embed/B1bNryZB188?autoplay=1" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="combined-images">
+      <img src="directions-to-graduation-venue-title.png" alt="Map Title">
+      <img src="tdtu-map-foot.gif" alt="Graduation Photo">
+    </div>
+    <img src="Pink Wishlist Your Story (1).jpg" alt="Wish List" class="image">
+  </div>
+</body>
+</html>
